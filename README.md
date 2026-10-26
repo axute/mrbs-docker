@@ -58,7 +58,7 @@ This is a docker container for the [Meeting room booking system](https://github.
          - mrbs-db
      mrbs-db:
        image: mariadb:latest
-       container_name: mrbs_db
+       container_name: mrbs-db
        environment:
          - PUID=1000
          - PGID=1000
@@ -99,7 +99,7 @@ $auth['type'] = 'saml';
 $auth['session'] = 'saml';
 $auth['saml']['ssp_host'] = '<host of your mrbs, eg https://mrbs.company.com/, with a trailing slash>';
 $auth['saml']['ssp_idp'] = '<issuer of your SAML idp>';
-$auth['saml']['ssp_entity_id'] = '<client id of yout SAML idp>';
+$auth['saml']['ssp_entity_id'] = '<client id of your SAML idp>';
 $auth['saml']['ssp_single_sign_on_service'] = '<single sign on endpoint of your SAML idp>';
 $auth['saml']['ssp_single_logout_service'] = '<single logout endpoint of your SAML idp>';
 $auth['saml']['ssp_cert_data'] = '<base64 encoded certificate data of your SAML idp>';
